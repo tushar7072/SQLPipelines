@@ -1,0 +1,26 @@
+﻿CREATE TABLE [dbo].[battingpost] (
+    [yearID]   INT          NOT NULL,
+    [round]    VARCHAR (10) NOT NULL,
+    [playerID] VARCHAR (9)  NOT NULL,
+    [teamID]   VARCHAR (3)  DEFAULT (NULL) NULL,
+    [lgID]     VARCHAR (2)  DEFAULT (NULL) NULL,
+    [G]        INT          DEFAULT (NULL) NULL,
+    [AB]       INT          DEFAULT (NULL) NULL,
+    [R]        INT          DEFAULT (NULL) NULL,
+    [H]        INT          DEFAULT (NULL) NULL,
+    [2B]       INT          DEFAULT (NULL) NULL,
+    [3B]       INT          DEFAULT (NULL) NULL,
+    [HR]       INT          DEFAULT (NULL) NULL,
+    [RBI]      INT          DEFAULT (NULL) NULL,
+    [SB]       INT          DEFAULT (NULL) NULL,
+    [CS]       INT          DEFAULT (NULL) NULL,
+    [BB]       INT          DEFAULT (NULL) NULL,
+    [SO]       INT          DEFAULT (NULL) NULL,
+    [IBB]      INT          DEFAULT (NULL) NULL,
+    [HBP]      INT          DEFAULT (NULL) NULL,
+    [SH]       INT          DEFAULT (NULL) NULL,
+    [SF]       INT          DEFAULT (NULL) NULL,
+    [GIDP]     INT          DEFAULT (NULL) NULL,
+    PRIMARY KEY CLUSTERED ([yearID] ASC, [round] ASC, [playerID] ASC)
+);
+
